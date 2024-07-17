@@ -1,0 +1,58 @@
+@import '../../../../public/variables.less';
+
+footer.main-footer {
+	margin-top: 200px;
+	.background {
+	}
+	.content {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 10vw;
+		width: 80vw;
+		padding-top: 50px;
+		padding-bottom: 100px;
+		.row1 {
+			a {
+				margin-bottom: 10px;
+				font-size: 1.3rem;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				text-decoration: none;
+				color: black;
+				&:hover {
+					transform: translateX(5px);
+				}
+				img {
+					width: 20px;
+				}
+			}
+		}
+		.row2 {
+			ul {
+				list-style: none;
+				li {
+					margin-bottom: 20px;
+					transition: all o.3s ease;
+					&::after {
+						content: '';
+						width: 0;
+						display: block;
+						background-color: black;
+						height: 1px;
+						transition: width 0.3s ease;
+					}
+					&:hover::after {
+						width: 100%;
+					}
+					a {
+						margin-bottom: 20px;
+						font-size: 1.3rem;
+						text-decoration: none;
+						color: black;
+					}
+				}
+			}
+		}
+	}
+}

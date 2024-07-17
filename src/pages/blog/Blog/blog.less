@@ -1,0 +1,144 @@
+.blog {
+	margin-left: 10vw;
+	width: 80vw;
+	.top-page {
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: space-between;
+		padding-top: 150px;
+		margin-bottom: 30px;
+
+		.pag {
+			display: flex;
+			gap: 5px;
+			color: #b6b6b6;
+			a {
+				text-decoration: none;
+				color: #b6b6b6;
+				font-size: 1.1em;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		.time {
+			font-family: Mont;
+			color: #b6b6b6;
+			font-size: 1.1em;
+			text-align: end;
+		}
+	}
+	.top {
+		position: relative;
+		display: flex;
+		justify-content: end;
+		h1 {
+			left: 0;
+			position: absolute;
+			font-size: 3.5em;
+			width: 50%;
+		}
+		.img {
+			width: 800px;
+			height: 500px;
+			figure {
+				img {
+					width: 800px;
+					height: 500px;
+				}
+				figcaption {
+					opacity: 0.5;
+					font-family: Mont;
+				}
+			}
+		}
+	}
+	.pars {
+		margin-left: 10vw;
+		width: 60vw;
+		h2 {
+			margin-top: 50px;
+			font-size: 3em;
+		}
+		h3 {
+			margin-top: 20px;
+			font-size: 2em;
+		}
+		p {
+			text-align: justify;
+			font-size: 1.3em;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+		strong {
+			font-family: Mont;
+			font-size: 1.4em;
+		}
+		ul {
+			text-align: justify;
+			margin-bottom: 20px;
+			margin-left: 50px;
+			font-size: 1.3em;
+			font-family: Mont;
+			li {
+				margin-top: 10px;
+			}
+		}
+	}
+	a.to-all {
+		margin-top: 50px;
+		margin-left: 10vw;
+		padding: 10px 20px;
+		border: 1px black solid;
+		font-size: 1.2em;
+		font-family: Mont;
+		text-decoration: none;
+		color: black;
+		position: relative;
+		bottom: -50px;
+		&:hover {
+			color: white;
+			background-color: black;
+		}
+	}
+}
+@media screen and (max-width: 1090px) {
+	.blog {
+		width: 90vw;
+		margin-left: 5vw;
+		.top-page {
+			.time {
+				margin-top: 20px;
+				justify-self: end;
+			}
+		}
+		.top {
+			flex-wrap: wrap;
+			justify-content: center;
+			h1 {
+				margin-bottom: 20px;
+				text-align: center;
+				margin-top: 20px;
+				width: auto;
+				position: relative;
+			}
+			.img {
+				width: 90vw;
+				height: auto;
+				figure {
+					img {
+						width: 90vw;
+						height: auto;
+					}
+				}
+			}
+		}
+		.pars {
+			width: 90vw;
+			margin-left: 0;
+		}
+		a.to-all {
+			margin-left: 0;
+		}
+	}
+}

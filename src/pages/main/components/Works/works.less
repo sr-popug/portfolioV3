@@ -1,0 +1,146 @@
+@import '../../../../../public/variables.less';
+article.works {
+	width: 100vw;
+	position: relative;
+	margin-bottom: 200px;
+	height: fit-content;
+	.background {
+		position: absolute;
+		z-index: -1;
+		height: 100%;
+		img.triangle3-1 {
+			position: absolute;
+			opacity: 0.5;
+			z-index: -2;
+			transform: rotate(95deg);
+			bottom: -1040px;
+			left: 80vw;
+		}
+		img.triangle3-2 {
+			position: absolute;
+			opacity: 0.5;
+			z-index: -2;
+			transform: rotate(95deg);
+			top: 540px;
+			left: 0vw;
+		}
+		.line {
+			height: 100%;
+			width: 1px;
+			background-color: #dcdcdc;
+		}
+		.line1 {
+			position: absolute;
+			left: 33vw;
+		}
+		.line2 {
+			position: absolute;
+			left: 66vw;
+		}
+
+		width: 100vw;
+		height: 100vh;
+	}
+	.content {
+		width: 80vw;
+		margin-left: 10vw;
+
+		.projects {
+			margin-bottom: 50px;
+			.project {
+				margin-top: 100px;
+				display: flex;
+				justify-content: center;
+				gap: 100px;
+				align-items: center;
+				&:nth-child(2n) {
+					flex-direction: row-reverse;
+				}
+				img[alt='project'] {
+					width: 500px;
+					height: 300px;
+				}
+				.info {
+					h3 {
+						text-align: center;
+						font-size: 1.5rem;
+					}
+					p {
+						width: 500px;
+						text-align: center;
+						margin-top: 20px;
+					}
+					.techs {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						margin-top: 20px;
+						gap: 30px;
+						.tech {
+							font-family: Mont;
+							font-weight: 900;
+						}
+					}
+					.links {
+						margin-top: 40px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						gap: 30px;
+
+						a {
+							display: flex;
+							align-items: center;
+							gap: 5px;
+							text-decoration: none;
+							font-weight: 900;
+							color: black;
+							transition: 0.3s ease all;
+							&:hover {
+								transform: translateY(-5px);
+							}
+						}
+					}
+				}
+			}
+		}
+		a.all {
+			text-decoration: none;
+			font-weight: 900;
+			color: black;
+			transition: 0.3s ease all;
+			padding: 10px 20px;
+			border: 2px solid black;
+			&:hover {
+				transform: translateX(5px);
+				background-color: black;
+				color: white;
+			}
+		}
+	}
+}
+@media (max-width: 1100px) {
+	article.works {
+		.content {
+			width: 94vw;
+			margin-left: 3vw;
+			.projects {
+				.project {
+					flex-direction: column;
+					justify-content: center;
+					&:nth-child(2n) {
+						flex-direction: column;
+					}
+					img[alt='project'] {
+						width: 100%;
+					}
+					.info {
+						p {
+							width: 90vw;
+						}
+					}
+				}
+			}
+		}
+	}
+}

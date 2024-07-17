@@ -1,0 +1,163 @@
+@import '../../../../public/variables.less';
+
+header.main-header {
+	height: 100px;
+	width: 80vw;
+	padding-right: 10vw;
+	padding-left: 10vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	z-index: 200;
+
+	div.burger-menu {
+		cursor: pointer;
+		padding: 10px;
+		display: inline-block;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		gap: 15px;
+		.line {
+			background-color: #000000;
+			position: absolute;
+
+			transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+			width: 70px;
+			height: 4px;
+			transition-duration: 500ms;
+		}
+		.line1 {
+			position: relative;
+			top: -13px;
+		}
+	}
+	div.active {
+		.line1 {
+			transform: rotate(45deg);
+			top: 3px;
+		}
+		.line2 {
+			transform: rotate(-45deg);
+		}
+	}
+	img[alt='logo'] {
+		width: 80px;
+	}
+	.menu {
+		position: absolute;
+		.background-menu {
+			.line-b {
+				position: fixed;
+				border: 1px solid #2d2d2d;
+				left: 0;
+				top: 100vh;
+				width: 25vw;
+				height: 100vh;
+				background-color: #000000;
+				margin: 0;
+				z-index: 220;
+			}
+			.line2 {
+				left: 25vw;
+			}
+			.line3 {
+				left: 50vw;
+			}
+			.line4 {
+				left: 75vw;
+			}
+		}
+		.shar {
+			transform: translateY(150vh);
+			display: flex;
+			text-decoration: none;
+			width: 350px;
+			height: 350px;
+			border-radius: 50%;
+			align-items: center;
+			justify-content: center;
+			position: fixed;
+			color: #fff;
+			font-family: gosha;
+			font-size: 1.8em;
+			z-index: 221;
+			cursor: pointer;
+			&:hover {
+				scale: 1.05;
+			}
+		}
+		.shar1 {
+			background: url('./images/фон.jpg');
+			left: 10vw;
+			width: 450px;
+			height: 450px;
+			color: #000000;
+			bottom: -50px;
+			font-size: 2.75em;
+		}
+		.shar2 {
+			background: url('./images/wall.jpg');
+			left: 20vw;
+			bottom: 350px;
+		}
+		.shar3 {
+			background: linear-gradient(#29f29b, #02a2f7);
+			left: 60vw;
+			bottom: -20px;
+			font-size: 4em;
+			width: 500px;
+			height: 500px;
+		}
+		.shar4 {
+			background: url('./images/bush.jpg');
+			left: 55vw;
+			bottom: 500px;
+		}
+		.back {
+			position: fixed;
+			width: 120px;
+			height: 120px;
+			left: calc(50vw - 120px);
+			bottom: calc(50vh - 120px);
+			border: 2px white dashed;
+			font-size: 1.5em;
+		}
+	}
+}
+@media screen and (max-width: 1090px) {
+	header.main-header {
+		.menu {
+			.shar1 {
+				font-size: 2em;
+				bottom: 100px;
+				left: 10vw;
+				width: 200px;
+				height: 200px;
+			}
+			.shar2 {
+				font-size: 2em;
+				bottom: 400px;
+				left: 12vw;
+				width: 230px;
+				height: 230px;
+			}
+			.shar3 {
+				font-size: 1.8em;
+				bottom: 180px;
+				left: 50vw;
+				width: 200px;
+				height: 200px;
+			}
+			.shar4 {
+				font-size: 1.8em;
+				bottom: 180px;
+				top: 70px;
+				left: 50vw;
+				width: 230px;
+				height: 230px;
+			}
+		}
+	}
+}

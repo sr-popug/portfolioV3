@@ -1,0 +1,95 @@
+@import '../../../../../public/variables.less';
+
+.calculator {
+	padding-top: 100px;
+	.pag {
+		margin-left: 10vw;
+		margin-bottom: 30px;
+		display: flex;
+		gap: 5px;
+		color: #b6b6b6;
+		a {
+			text-decoration: none;
+			color: #b6b6b6;
+			font-size: 1.1em;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.about-field {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.field {
+			border-radius: 8px;
+			width: 400px;
+			background-color: #272727;
+			font-family: Mont;
+			.output {
+				overflow-x: scroll;
+				width: 370px;
+				color: white;
+				font-size: 1.5em;
+				text-align: end;
+				padding: 20px 15px;
+				background-color: #212121;
+				border-radius: 8px 8px 0 0;
+				&::-webkit-scrollbar {
+					width: 12px; /* ширина scrollbar */
+				}
+				&::-webkit-scrollbar-track {
+					background: #272727; /* цвет дорожки */
+				}
+				&::-webkit-scrollbar-thumb {
+					background-color: #212121;
+					border-radius: 20px;
+					border: 3px solid #272727;
+				}
+				span {
+					font-size: 0.7em;
+					position: relative;
+					top: -0.6em;
+				}
+			}
+			.buttons {
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+
+				button {
+					font-family: Mont;
+					border: none;
+					font-size: 1.3em;
+					color: white;
+					cursor: pointer;
+					height: 70px;
+					background-color: #272727;
+					&:hover {
+						background-color: #212121;
+					}
+					span {
+						font-size: 0.7em;
+						position: relative;
+						top: -0.6em;
+					}
+					&.delete {
+						grid-column-start: 2;
+						grid-column-end: 4;
+					}
+					&.yellow {
+						color: @accent2;
+					}
+					&.res {
+						grid-column-start: 3;
+						grid-column-end: 5;
+						color: white;
+						background-color: @accent2;
+						&:hover {
+							background: #ff7626;
+						}
+					}
+				}
+			}
+		}
+	}
+}

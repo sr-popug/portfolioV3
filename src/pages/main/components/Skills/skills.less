@@ -1,0 +1,90 @@
+@import '../../../../../public/variables.less';
+article.skills {
+	position: relative;
+	.background {
+		background-color: rgb(24, 24, 24);
+		width: 100vw;
+		height: 400px;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+		img {
+			width: 100vw;
+			height: 400px;
+		}
+	}
+	.content {
+		width: 100vw;
+		height: 450px;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		position: relative;
+		h2 {
+			opacity: 0.2;
+			font-family: Gosha;
+			position: absolute;
+			left: 50px;
+			top: 20px;
+			color: transparent;
+			-webkit-text-stroke: 1px white;
+			font-size: 120px;
+			text-transform: uppercase;
+		}
+		.box {
+			display: flex;
+			/*   Ширина блока item составляет 350px + отступ 20px = 370px. 
+				Мы хотим показать 11 блоков. 11*370=4070px ширина бокса. */
+			width: 4440px;
+			transform: translate3d(0, 0, 0);
+			/*     55s скорость прокрутки, 2s задержка перед стартом */
+			animation: scroll 40s cubic-bezier(0.1, 0.1, 0.1, 0.1) infinite;
+			.item {
+				background-color: #0a0a0a;
+				min-width: 340px;
+				height: 200px;
+				color: #fff;
+				font-size: 30px;
+				margin-right: 20px;
+				cursor: pointer;
+				transition: all 0.5s;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 10px;
+				padding-left: 10px;
+				gap: 20px;
+				img {
+					width: 70px;
+				}
+				.right {
+					h3 {
+						font-size: 25px;
+					}
+					p {
+						font-size: 15px;
+						width: 250px;
+						opacity: 0.4;
+					}
+				}
+			}
+
+			/* Пауза при наведении на блок item */
+			.box:hover {
+				animation-play-state: paused;
+			}
+			/* Включаем и отключаем блоки на JS */
+			.item-false {
+				display: none;
+			}
+			.item-true {
+				display: block;
+			}
+		}
+	}
+}
+@keyframes scroll {
+	100% {
+		transform: translate3d(-100%, 0, 0);
+	}
+}
