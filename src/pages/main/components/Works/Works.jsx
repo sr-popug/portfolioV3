@@ -3,9 +3,9 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { NavLink } from 'react-router-dom'
 import triangle from '../../../../../public/треугольник.png'
-import projects from '../../../portfolio/projects'
 import arrow from './images/arrow-link.svg'
 import gh from './images/gh.svg'
+import projects from './projects'
 import './works.less'
 
 function Works() {
