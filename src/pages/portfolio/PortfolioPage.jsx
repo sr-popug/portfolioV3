@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import projects from '../main/components/Works/projects'
 import axios from './images/axios.png'
 import gh from './images/gh.svg'
 import gsapImg from './images/gsap.png'
@@ -12,7 +13,6 @@ import sass from './images/sass.png'
 import ts from './images/typescript.png'
 import wp from './images/wp.png'
 import './portfolio.less'
-import projects from './projects'
 
 function whatTech(tech) {
 	switch (tech) {
