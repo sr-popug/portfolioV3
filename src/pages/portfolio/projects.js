@@ -8,7 +8,7 @@ const projects = [
 		techs: ['react', 'axios', 'mobx', 'less'],
 		date: '23-06-2024',
 		tech: ['React', 'NodeJS'],
-		link: 'https://sr-popug.github.io/GoSurf/',
+		link: 'http://31.129.110.53:3002/',
 		linkGH: 'https://github.com/sr-popug/dushtask-client',
 	},
 	{
@@ -36,18 +36,18 @@ const projects = [
 		link: 'https://sr-popug.github.io/GoSurf/',
 		linkGH: 'https://github.com/sr-popug/GoSurf',
 	},
-	{
-		id: '4ui3u42',
-		img: './images/murman.png',
-		title: 'Murman Events',
-		description:
-			'Новостной сайт моего родного города, на котором можно увидеть мероприятия, происходящие в ближайшее время. Любой пользователь может отправить на модерацию свое мероприятие, а после одобрения администрацией это мероприятие добавиться на сайт. Есть админ панель и множество проверок форм, поиск по мероприятиям и удобный интерфейс.',
-		techs: ['react', 'axios', 'mobx', 'less'],
-		date: '23-12-2023',
-		tech: ['React', 'NodeJS'],
-		link: 'https://sr-popug.github.io/GoSurf/',
-		linkGH: 'https://github.com/sr-popug/murman-events-client',
-	},
+	// {
+	// 	id: '4ui3u42',
+	// 	img: './images/murman.png',
+	// 	title: 'Murman Events',
+	// 	description:
+	// 		'Новостной сайт моего родного города, на котором можно увидеть мероприятия, происходящие в ближайшее время. Любой пользователь может отправить на модерацию свое мероприятие, а после одобрения администрацией это мероприятие добавиться на сайт. Есть админ панель и множество проверок форм, поиск по мероприятиям и удобный интерфейс.',
+	// 	techs: ['react', 'axios', 'mobx', 'less'],
+	// 	date: '23-12-2023',
+	// 	tech: ['React', 'NodeJS'],
+	// 	link: 'https://sr-popug.github.io/GoSurf/',
+	// 	linkGH: 'https://github.com/sr-popug/murman-events-client',
+	// },
 	{
 		id: 'pr0ioaecnwel',
 		img: './images/mnbn.png',
