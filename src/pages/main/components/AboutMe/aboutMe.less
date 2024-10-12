@@ -1,146 +1,146 @@
 @import '../../../../../public/variables.less';
 article.aboutMe {
-	width: 100vw;
-	position: relative;
-	margin-bottom: 200px;
-	margin-top: 100px;
+  width: 100vw;
+  position: relative;
+  margin-bottom: 200px;
+  margin-top: 100px;
 
-	height: fit-content;
-	.background {
-		position: absolute;
-		z-index: -1;
-		img.triangle2-1 {
-			position: absolute;
-			opacity: 0.5;
-			z-index: -2;
-			transform: rotate(95deg);
-			bottom: -140px;
-			left: 80vw;
-		}
-		img.triangle2-2 {
-			position: absolute;
-			opacity: 0.5;
-			z-index: -2;
-			transform: rotate(95deg);
-			top: -140px;
-			left: 0vw;
-		}
-		.line {
-			height: 100%;
-			width: 1px;
-			background-color: #e5e5e5;
-		}
-		.line1 {
-			position: absolute;
-			left: 33vw;
-		}
-		.line2 {
-			position: absolute;
-			left: 66vw;
-		}
-		.forms {
-			opacity: 0.5;
-			transform: scale(-1, 1);
-			position: absolute;
-			right: 20vw;
-			top: 200px;
-		}
-		width: 100vw;
-		height: 100vh;
+  height: fit-content;
+  .background {
+    position: absolute;
+    z-index: -1;
+    img.triangle2-1 {
+      position: absolute;
+      opacity: 0.5;
+      z-index: -2;
+      transform: rotate(95deg);
+      bottom: -140px;
+      left: 80vw;
+    }
+    img.triangle2-2 {
+      position: absolute;
+      opacity: 0.5;
+      z-index: -2;
+      transform: rotate(95deg);
+      top: -140px;
+      left: 0vw;
+    }
+    .line {
+      height: 100%;
+      width: 1px;
+      background-color: #e5e5e5;
+    }
+    .line1 {
+      position: absolute;
+      left: 33vw;
+    }
+    .line2 {
+      position: absolute;
+      left: 66vw;
+    }
+    .forms {
+      opacity: 0.5;
+      transform: scale(-1, 1);
+      position: absolute;
+      right: 20vw;
+      top: 200px;
+    }
+    width: 100vw;
+    height: 100vh;
 
-		.stars {
-			position: absolute;
-			right: 50vw;
-			bottom: 20%;
-		}
-	}
-	.content {
-		width: 80vw;
-		margin-left: 10vw;
-		display: flex;
-		flex-wrap: wrap-reverse;
-		justify-content: space-between;
-		.row1 {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
+    .stars {
+      position: absolute;
+      right: 50vw;
+      bottom: 20%;
+    }
+  }
+  .content {
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    .row1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-			p {
-				margin-top: 20px;
-				font-size: 18px;
-				width: 700px;
-				text-align: justify;
-				span {
-					padding: 1px;
-					background: linear-gradient(
-						20deg,
-						rgb(50, 135, 253) 0%,
-						rgba(54, 219, 255, 1) 100%
-					);
-				}
-			}
-			.socials {
-				display: flex;
-				gap: 20px;
-				justify-content: end;
-				margin-top: 20px;
-				img {
-					width: 60px;
-					&:hover {
-						transform: translateY(-5px);
-						box-shadow: 0px 3px 5px rgb(119, 119, 119);
-					}
-				}
-			}
-		}
-		.row2 {
-			position: relative;
-			display: flex;
-			justify-content: center;
-			animation: star 3s ease-in-out infinite;
-			img.star {
-				position: absolute;
-			}
-			img.star1 {
-				right: 0;
-				width: 50px;
-			}
-			img.star2 {
-				left: 50px;
-				bottom: 0;
-				width: 100px;
-			}
-			img[alt='iam'] {
-				width: 500px;
-			}
-		}
-	}
+      p {
+        margin-top: 20px;
+        font-size: 18px;
+        width: 700px;
+        text-align: justify;
+        span {
+          padding: 1px;
+          background: linear-gradient(
+            20deg,
+            rgb(50, 135, 253) 0%,
+            rgba(54, 219, 255, 1) 100%
+          );
+        }
+      }
+      .socials {
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+        margin-top: 20px;
+        img {
+          width: 60px;
+          &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 3px 5px rgb(119, 119, 119);
+          }
+        }
+      }
+    }
+    .row2 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      animation: star 3s ease-in-out infinite;
+      img.star {
+        position: absolute;
+      }
+      img.star1 {
+        right: 0;
+        width: 50px;
+      }
+      img.star2 {
+        left: 50px;
+        bottom: 0;
+        width: 100px;
+      }
+      img[alt='iam'] {
+        width: 500px;
+      }
+    }
+  }
 }
 @media (max-width: 750px) {
-	article.aboutMe {
-		.content {
-			width: 94vw;
-			margin-left: 3vw;
-			.row1 {
-				justify-content: center;
-				p {
-					width: 95%;
-				}
-			}
-			.row2 {
-				width: 95%;
-			}
-		}
-	}
+  article.aboutMe {
+    .content {
+      width: 94vw;
+      margin-left: 3vw;
+      .row1 {
+        justify-content: center;
+        p {
+          width: 95%;
+        }
+      }
+      .row2 {
+        width: 95%;
+      }
+    }
+  }
 }
 @keyframes star {
-	from {
-		transform: translateY(0);
-	}
-	50% {
-		transform: translateY(-10px);
-	}
-	to {
-		transform: translateY(00px);
-	}
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(00px);
+  }
 }

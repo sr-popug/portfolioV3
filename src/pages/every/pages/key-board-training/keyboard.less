@@ -1,0 +1,119 @@
+@import '../../../../../public/variables.less';
+
+.training {
+  position: relative;
+  height: calc(100vh - 200px);
+  margin-top: 100px;
+  margin-left: 20vw;
+  width: 60vw;
+  .pag {
+    margin-left: -10vw;
+  }
+  .offer-offer {
+    margin-bottom: 35px;
+
+    text-transform: uppercase;
+    font-family: Gosha;
+    font-size: 38px;
+  }
+  .top {
+    position: relative;
+    .stroke {
+      margin-bottom: 20px;
+      padding: 20px;
+
+      background: #2d384a;
+      overflow: hidden;
+      border-radius: 20px;
+
+      font-size: 24px;
+      font-family: Mont;
+
+      .text {
+        position: relative;
+        left: 5vw;
+        text-wrap: nowrap;
+
+        .made {
+          color: #d2d2d2;
+        }
+        .now {
+          text-decoration: underline;
+          color: @accent2;
+        }
+        .farther {
+          color: #818181;
+        }
+      }
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .text-info {
+        text-wrap: nowrap;
+
+        display: flex;
+        gap: 3rem;
+        * {
+          font-size: 1.6rem;
+        }
+      }
+      // button {
+      //   padding: 0.8rem5px;
+      //   border: 2px #818181 solid;
+
+      //   border-radius: 20px;
+
+      //   background-color: transparent;
+      //   font-family: Montserrat;
+      //   color: white;
+      //   cursor: pointer;
+      //   transition: all 0.3s ease;
+
+      //   &:hover {
+      //     color: #0a1f32;
+      //     background-color: #818181;
+      //   }
+      // }
+    }
+  }
+  .flex-keyboard {
+    display: flex;
+    justify-content: center;
+
+    .keyboard {
+      margin-top: 150px;
+      width: 940px;
+
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      justify-content: center;
+      .button {
+        min-width: 60px;
+        height: 60px;
+        border-radius: 20px;
+        border: 2px solid #818181;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 22px;
+        font-family: Mont;
+        color: #818181;
+        text-transform: uppercase;
+        &.active {
+          color: @accent2;
+          border-color: @accent2;
+        }
+        &.Space {
+          width: 46rem;
+        }
+        &.ShiftLeft {
+          padding: 0 25px;
+        }
+      }
+    }
+  }
+}

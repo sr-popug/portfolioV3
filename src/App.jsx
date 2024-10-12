@@ -8,37 +8,39 @@ import Header from './pages/common/Header/Header'
 import MiniModal from './pages/common/MiniModal/MiniModal'
 import EveryPage from './pages/every/EveryPage'
 import Calculator from './pages/every/pages/calculator/Calculator'
+import KeyBoardTraining from './pages/every/pages/key-board-training/KeyBoardTraining'
 import TikTakToe1 from './pages/every/pages/ttt1/TikTakToe1'
 import TikTakToe2 from './pages/every/pages/ttt2/TikTakToe2'
 import MainPage from './pages/main/MainPage'
 import PortfolioPage from './pages/portfolio/PortfolioPage'
 
 function App() {
-	const { pathname } = useLocation()
+  const { pathname } = useLocation()
 
-	useEffect(() => {
-		window.scrollTo(0, 0)
-	}, [pathname])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
 
-	return (
-		<>
-			<Header />
-			<Routes>
-				<Route path='/' element={<MainPage />} />
-				<Route path='/portfolio' element={<PortfolioPage />} />
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/portfolio' element={<PortfolioPage />} />
 
-				<Route path='/blog' element={<BlogsPage />} />
-				<Route path='/blog/:id' element={<Blog />} />
+        <Route path='/blog' element={<BlogsPage />} />
+        <Route path='/blog/:id' element={<Blog />} />
 
-				<Route path='/every' element={<EveryPage />} />
-				<Route path='/every/tik-tak-toe1' element={<TikTakToe1 />} />
-				<Route path='/every/tik-tak-toe2' element={<TikTakToe2 />} />
-				<Route path='/every/calculator' element={<Calculator />} />
-			</Routes>
-			<Footer />
-			<MiniModal />
-		</>
-	)
+        <Route path='/every' element={<EveryPage />} />
+        <Route path='/every/tik-tak-toe1' element={<TikTakToe1 />} />
+        <Route path='/every/tik-tak-toe2' element={<TikTakToe2 />} />
+        <Route path='/every/calculator' element={<Calculator />} />
+        <Route path='/every/keyboard-training' element={<KeyBoardTraining />} />
+      </Routes>
+      <Footer />
+      <MiniModal />
+    </>
+  )
 }
 
 export default App

@@ -1,44 +1,45 @@
 @import '../public/variables.less';
 @font-face {
-	font-family: Gosha;
-	src: url(../public/GoshaSans-Bold.otf);
+  font-family: Gosha;
+  src: url(../public/GoshaSans-Bold.otf);
 }
 @font-face {
-	font-family: Mont;
-	src: url(../public/Montserrat-Regular.ttf);
+  font-family: Mont;
+  src: url(../public/Montserrat-Regular.ttf);
 }
 body {
-	padding: 0;
-	margin: 0;
-	position: relative;
-	z-index: -2;
-	overflow-x: hidden;
-	scroll-behavior: smooth;
-	background-color: #efefef;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: -2;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #efefef;
+  font-family: Mont;
 }
 #root {
-	position: relative;
-	z-index: -2;
+  position: relative;
+  z-index: -2;
 }
 @media screen and (max-width: 600pc) {
-	#root {
-		overflow-x: hidden;
-	}
+  #root {
+    overflow-x: hidden;
+  }
 }
 * {
-	scroll-behavior: smooth;
-	margin: 0;
-	transition: all 0.3s ease;
-	padding: 0;
+  scroll-behavior: smooth;
+  margin: 0;
+  transition: all 0.3s ease;
+  padding: 0;
 }
 *::selection {
-	background-color: @accent2;
-	opacity: 0.2;
+  background-color: @accent2;
+  opacity: 0.2;
 }
 
 p,
 a {
-	font-family: Mont;
+  font-family: Mont;
 }
 h1,
 h2,
@@ -46,26 +47,41 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Gosha;
+  font-family: Gosha;
 }
 .about-h2 {
-	display: flex;
-	justify-content: center;
-	h2 {
-		text-align: center;
-		font-size: 60px;
-		color: black;
-		width: fit-content;
-		&::after {
-			content: '';
-			position: relative;
-			top: -15px;
-			z-index: -1;
-			height: 20px;
-			display: block;
-			width: 100%;
-			background-color: @accent3;
-			transform: skew(42deg);
-		}
-	}
+  display: flex;
+  justify-content: center;
+  h2 {
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    width: fit-content;
+    &::after {
+      content: '';
+      position: relative;
+      top: -15px;
+      z-index: -1;
+      height: 20px;
+      display: block;
+      width: 100%;
+      background-color: @accent3;
+      transform: skew(42deg);
+    }
+  }
+}
+.pag {
+  margin-left: 0vw;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 5px;
+  color: #b6b6b6;
+  a {
+    text-decoration: none;
+    color: #b6b6b6;
+    font-size: 1.1em;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
