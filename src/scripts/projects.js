@@ -8,7 +8,7 @@ const projects = [
 		techs: ['react', 'axios', 'mobx', 'less'],
 		date: '23-06-2024',
 		tech: ['React', 'NodeJS'],
-		link: 'http://31.129.110.53:3002/',
+		link: 'https://dushtask-client.vercel.app/',
 		linkGH: 'https://github.com/sr-popug/dushtask-client',
 	},
 	{
