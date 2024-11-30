@@ -31,7 +31,7 @@ function Main() {
         </h1>
       </article>
       <a
-        href='../../../../../public/Резюме_Антона_Цуканова.pdf'
+        href='/Резюме_Антона_Цуканова.pdf'
         target='_blank'
         rel='noopener noreferrer'
         className='resume'
