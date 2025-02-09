@@ -12,6 +12,18 @@ const projects = [
     linkGH: 'https://github.com/sr-popug/neduca',
   },
   {
+    id: '4ui3u42',
+    img: '/prytki.png',
+    title: 'Прятки в темноте',
+    description:
+      'Сайт квеста в Мурманске под название "Прятки в темноте" сделан на NextJS. Сайт адаптивен под разные типы устройств. Есть возможность бронирования определенного времени.',
+    tech: ['NextJS', 'TypeScript'],
+    techs: ['next', 'ts', 'tailwind'],
+    date: '09-11-2024',
+    link: 'https://prytki2.vercel.app/',
+    linkGH: 'https://github.com/sr-popug/prytki2',
+  },
+  {
     id: '32oii0irp',
     img: '/dushtask.png',
     title: 'DushTask',
@@ -48,6 +60,7 @@ const projects = [
     link: 'https://sr-popug.github.io/GoSurf/',
     linkGH: 'https://github.com/sr-popug/GoSurf',
   },
+
   // {
   // 	id: '4ui3u42',
   // 	img: '/murman.png',

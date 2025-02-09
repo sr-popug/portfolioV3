@@ -10,6 +10,7 @@ import next from './images/next.png'
 import react from './images/react.png'
 import redux from './images/redux.png'
 import sass from './images/sass.png'
+import tailwind from './images/tailwind.svg'
 import ts from './images/typescript.png'
 import wp from './images/wp.png'
 import './portfolio.less'
@@ -38,6 +39,8 @@ function whatTech(tech) {
       return <img src={less} alt='' className='less' />
     case 'mobx':
       return <img src={mobx} alt='' className='mobx' />
+    case 'tailwind':
+      return <img src={tailwind} alt='' className='tailwind' />
   }
 }
 export default function PortfolioPage() {
