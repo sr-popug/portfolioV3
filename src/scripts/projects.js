@@ -1,17 +1,5 @@
 const projects = [
   {
-    id: '32oii0irp235',
-    img: '/neduca.png',
-    title: 'Neduca',
-    description:
-      'Обучающая платформа, написанная на NextJS. На ней в большинстве своём рассматривается именно практическая часть обучения таким технологиям как JavaScript, TypeScript, React, NextJS. НА сайте можно проходить тесты по интересующей вас технологии или решать тематические задачи разной сложности. Также есть специальный клавиатурный тренажёр в котором генерируются слова именно под изучаемую технологию. ',
-    techs: ['next', 'ts', 'sass'],
-    date: '23-06-2024',
-    tech: ['NextJS', 'TypeScript'],
-    link: 'https://neduca.vercel.app',
-    linkGH: 'https://github.com/sr-popug/neduca',
-  },
-  {
     id: '4ui3u42',
     img: '/prytki.png',
     title: 'Прятки в темноте',
@@ -22,6 +10,18 @@ const projects = [
     date: '09-11-2024',
     link: 'https://prytki2.vercel.app/',
     linkGH: 'https://github.com/sr-popug/prytki2',
+  },
+  {
+    id: '32oii0irp235',
+    img: '/neduca.png',
+    title: 'Neduca',
+    description:
+      'Обучающая платформа, написанная на NextJS. На ней в большинстве своём рассматривается именно практическая часть обучения таким технологиям как JavaScript, TypeScript, React, NextJS. НА сайте можно проходить тесты по интересующей вас технологии или решать тематические задачи разной сложности. Также есть специальный клавиатурный тренажёр в котором генерируются слова именно под изучаемую технологию. ',
+    techs: ['next', 'ts', 'sass'],
+    date: '23-06-2024',
+    tech: ['NextJS', 'TypeScript'],
+    link: 'https://neduca.vercel.app',
+    linkGH: 'https://github.com/sr-popug/neduca',
   },
   {
     id: '32oii0irp',
