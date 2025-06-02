@@ -1,5 +1,17 @@
 const projects = [
   {
+    id: '4ui3u4212312',
+    img: '/memora.png',
+    title: 'Memora',
+    description:
+      'визуальный редактор, позволяющий пользователю создавать и управлять блоками контента (такими как текст, изображения и ссылки) с помощью drag-and-drop интерфейса. Пользователь может добавлять элементы на "доску", перемещать их, редактировать содержимое в удобных диалоговых окнах и сохранять структуру.',
+    tech: ['NextJS', 'TypeScript'],
+    techs: ['next', 'ts', 'redux', 'tailwind'],
+    date: '03-05-2025',
+    link: 'https://memora-kappa.vercel.app/',
+    linkGH: 'https://github.com/sr-popug/memora',
+  },
+  {
     id: '4ui3u42',
     img: '/prytki.png',
     title: 'Прятки в темноте',
