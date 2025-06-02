@@ -76,7 +76,7 @@ function Works() {
                         Live-Demo
                         <img src={arrow} alt='link' />
                       </a>
-                      <a className='work-gsap' href={project.link}>
+                      <a className='work-gsap' href={project.linkGH}>
                         GitHub <img src={gh} alt='link' />
                       </a>
                     </div>
